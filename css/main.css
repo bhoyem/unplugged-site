@@ -89,36 +89,29 @@ textarea {
 /* -------------------- Base Header - Footer Styles -------------------- */
 header {
   display: flex;
-  /* flex-direction: column; */
   justify-content: center;
 }
 
 .content-wrapper {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  outline: 3px dotted red;
+  width: 90%;
 }
+
+header .content-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+/* header nav {
+  display: flex;
+  justify-content: center;
+} */
 
 header nav ul {
   display: flex;
-  justify-content: space-evenly;
-}
-
-.form-description,
-.form {
-  display: flex;
-  flex-direction: column;
-}
-
-.features-items {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.reviews {
-  display: flex;
-  flex-direction: column;
+  justify-content: space-around;
 }
 
 footer {
@@ -128,9 +121,67 @@ footer {
   text-align: center;
 }
 
-.social-icons{
-  
+footer .social-icons {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
+
+footer .social p {
+  display: flex;
+  justify-content: center;
+}
+
+
+/*--------------Home Page on Mobile---------------------------*/
+
+.hero-area {
+  display: flex;
+  justify-content: center;
+}
+
+aside {
+  display: flex;
+  justify-content: center;
+}
+
+/* .form-description,
+.form {
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+} */
+
+.features {
+  display: flex;
+  justify-content: center;
+
+}
+
+.features .features-items {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.reviews {
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+
+}
+
+.mission {}
+
+.contact-section {}
+
+.faq {}
+
+.faq .content-wrapper {}
+
+
+
+
 
 
 
