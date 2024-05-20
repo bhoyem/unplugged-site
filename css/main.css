@@ -13,7 +13,7 @@
 
 html {
   color: #222;
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 1.4;
 }
 
@@ -86,7 +86,14 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
-/* -------------------- Base Header - Footer Styles -------------------- */
+
+/* MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+Mobile First
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM */
+
+/* =========================== General Styles =============================== */
+
+html {}
 
 body {
   font-family: Open Sans, sans-serif;
@@ -94,11 +101,56 @@ body {
   font-size: 1em;
 }
 
+ul,
+ol {
+  list-style-type: none;
+}
+
+a {
+  color: #E2E3ED;
+  text-decoration: none;
+}
+
+h1 {
+  font-size: 2.25rem;
+  line-height: 1.1944;
+  font-weight: 500;
+  font-family: Poppins, Helvetica, Arial, sans-serif;
+}
+
+h2 {
+  font-family: Poppins, sans-serif;
+  font-size: 1.875em;
+  font-weight: 500;
+}
+
+h3,
+h4 {
+  font-family: Poppins, sans-serif;
+  font-size: 1.125em;
+  font-weight: 500;
+}
+
+p {
+  font-size: .875em;
+  line-height: 1.2857;
+}
+
+img {}
+
+figure {}
+
+address {
+  font-style: normal;
+}
+
 .content-wrapper {
   /* outline: 3px dotted red; */
   width: 90%;
   margin: 50px 0;
 }
+
+/* -------------------- Mobile Header - Footer Styles ------------------------- */
 
 header {
   display: flex;
@@ -129,7 +181,7 @@ header .header-logo {
 
 header nav {
   width: 60%;
-  font-size: 18px;
+  font-size: 1.125em;
   font-weight: bold;
   /* outline: 2px dashed greenyellow; */
 }
@@ -140,14 +192,8 @@ header nav ul {
   padding: 0;
   margin: 0;
   width: 100%;
-  list-style-type: none;
   font-size: 1.125em;
   font-weight: bold;
-}
-
-header nav ul li a {
-  text-decoration: none;
-  color: #e2e3ed
 }
 
 footer {
@@ -176,10 +222,6 @@ footer h4 {
   /* padding: 20px 0; */
 }
 
-footer address p {
-  font-style: initial;
-}
-
 footer .social p {
   display: flex;
   justify-content: center;
@@ -197,41 +239,17 @@ footer .copyright {
 }
 
 
-/*--------------Home Page on Mobile---------------------------*/
+/*----------------------------- Mobile Homepage ------------------------------------*/
 
-h1 {
-  font-size: 36px;
-  line-height: 43px;
-  font-weight: 500;
-  font-family: Poppins, Helvetica, Arial, sans-serif;
-}
-
-h2 {
-  font-size: 30px;
-  font-weight: 500;
-}
-
-h2,
-h3,
-h4 {
-  font-family: Poppins, sans-serif;
-}
-
-h3,
-h4 {
-  font-size: 18px;
-  font-weight: 500;
-}
-
-p {
-  font-size: 14px;
-  line-height: 18px;
-}
 
 .hero-area {
   display: flex;
   justify-content: center;
   background-color: #202322;
+}
+
+.hero-area h1 {
+  width: 90%;
 }
 
 aside {
@@ -277,11 +295,10 @@ aside .content-wrapper .form {
 
 aside .form input {
   width: 100%;
-
 }
 
 input {
-  font-size: 18px;
+  font-size: 1.125em;
   font-weight: 500;
 }
 
@@ -307,6 +324,10 @@ input {
   flex-flow: row wrap;
 }
 
+.fontawesome-icon {
+  /* font-size: 3.75em; */
+}
+
 .features p {
   margin: 0;
 }
@@ -322,7 +343,7 @@ input {
 
 .reveiws h2 {
   margin-bottom: 40px;
-  line-height: 30px;
+  line-height: 1;
 }
 
 .reviews h3 {
@@ -330,9 +351,7 @@ input {
   margin: 20px 0;
 }
 
-/* =======================================
-About Page
-======================================= */
+/* ================================== Mobile About Page ============================ */
 
 .mission {
   display: flex;
@@ -351,9 +370,7 @@ About Page
 }
 
 
-/* =======================================
-FAQ Page
-======================================= */
+/* ======================================= Mobile FAQ Page ========================== */
 
 .faq {
   display: flex;
@@ -363,7 +380,7 @@ FAQ Page
 
 .faq h2 {
   margin-bottom: 40px;
-  line-height: 30px;
+  line-height: 1;
 }
 
 .faq .content-wrapper {
@@ -379,7 +396,7 @@ FAQ Page
 }
 
 .faq-content h4 {
-  line-height: 24px;
+  line-height: 1.3333;
 }
 
 
@@ -475,21 +492,23 @@ FAQ Page
    ========================================================================== */
 
 @media only screen and (min-width: 768px) {
-  /************************ Style adjustments for tablets ***************************/
+  /* TTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTT
+  Style adjustments for tablets 
+  TTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTT */
 
   h1 {
-    font-size: 3em;
-    line-height: 3em;
+    font-size: 3rem;
+    line-height: 1;
   }
 
   h2 {
     font-size: 2.25em;
-    list-style: 3em;
+    list-style: 3rem;
   }
 
   h3 {
     font-size: 1.5em;
-    line-height: 1.875em;
+    line-height: 1.25;
 
   }
 
@@ -499,7 +518,7 @@ FAQ Page
     outline: 1px dashed rgb(92, 47, 255);
   }
 
-  /*  ===========================header area ===================================*/
+  /* =========================== Tablet Header ========================================*/
 
   header {
     padding: 33px 0;
@@ -529,7 +548,42 @@ FAQ Page
     display: none;
   }
 
-  /* ============================= Hero Area ===================================*/
+  /* =================================== Tablet Footer ====================================*/
+
+  footer .content-wrapper {
+    width: 65%;
+    margin-bottom: 0;
+  }
+
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  footer .contact {
+    margin-bottom: 0;
+    width: 30%;
+  }
+
+  footer .social {
+    width: 30%;
+  }
+
+  footer h4 {
+    font-size: 1.5em;
+  }
+
+  footer p {
+    line-height: 1.2857;
+  }
+
+  footer .copyright {
+    width: 100%;
+    margin-top: 100px;
+  }
+
+  /* ==================================== Tablet Homepage ===================================*/
 
   .hero-area {
     background-image: ;
@@ -538,8 +592,6 @@ FAQ Page
   .hero-area h1 {
     margin: 0;
   }
-
-  /* ===================================  Aside ===============================*/
 
   aside .content-wrapper {
     margin: 50px 0;
@@ -553,8 +605,6 @@ FAQ Page
     width: 40%;
     margin: 0;
   }
-
-  /* ===================================== Features =================================== */
 
   .features-items {
     display: flex;
@@ -577,8 +627,6 @@ FAQ Page
     /* align-content: center; */
   }
 
-  /* =========================================== Reviews ============================ */
-
   .reviews h3 {
     width: 100%;
     margin: 0;
@@ -593,48 +641,8 @@ FAQ Page
     width: 49%;
   }
 
-  /* ======================================== Footer ====================================*/
 
-  footer .content-wrapper {
-    width: 65%;
-    margin-bottom: 0;
-  }
-
-  .footer-content {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-
-  footer .contact {
-    margin-bottom: 0;
-    width: 30%;
-  }
-
-  footer .social {
-    width: 30%;
-  }
-
-  footer .contact h4,
-  footer .social h4 {
-    font-size: 1.5em;
-  }
-
-  footer p {
-    line-height: 1.125em;
-  }
-
-  footer .copyright {
-    width: 100%;
-    margin-top: 100px;
-  }
-
-
-
-
-  /**************** About page for tablet *****************/
-
-  /* ======================== Mission area ======================= */
+  /*********************************** Tablet About Page *****************/
 
   .mission .content-wrapper {
     display: flex;
@@ -657,11 +665,13 @@ FAQ Page
     margin: 0 0 20px 0;
   }
 
+  .contact-section h4 {
+    font-size: 1.5em;
+  }
+
   .contact-section .content-wrapper h2 {
     width: 80%;
   }
-
-  /* =================================== Contact area =======================*/
 
   .contact-content {
     display: flex;
@@ -675,7 +685,7 @@ FAQ Page
   }
 
 
-  /************** FAQ Page for tablet ******************/
+  /**************************** Tablet FAQ Page ******************************/
 
   .faq .content-wrapper {
     justify-content: space-between;
@@ -696,30 +706,32 @@ FAQ Page
   .faq h4,
   .faq p {
     font-size: .875em;
-    line-height: 15.75px;
+    line-height: 1.125;
   }
 
 }
 
 @media only screen and (min-width: 1200px) {
-  /******************** Style adjustments for desktops *******************************/
+  /* DDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDD
+  Style adjustments for desktops
+  DDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDD */
 
   h1 {
-    font-size: 60px;
+    font-size: 3.75em;
   }
 
   h2 {
-    font-size: 36px;
+    font-size: 2.25em;
   }
 
   h3,
   h4 {
-    font-size: 30px;
+    font-size: 1.875em;
   }
 
   p {
-    font-size: 18px;
-    line-height: 24px;
+    font-size: 1.125em;
+    line-height: 1.333;
   }
 
   .content-wrapper {
@@ -727,64 +739,13 @@ FAQ Page
     /* margin: 0; */
   }
 
-  /* ================== header area =========================*/
+  /* =========================== Desktop Header Area =========================*/
 
   header {
     padding: 15px 0;
   }
 
-  /* ================== hero area ===========================*/
-
-  .hero-area {
-    height: 600px;
-  }
-
-  .hero-area h1 {
-    width: 80%;
-  }
-
-  /* ======================= Aside area ==================================*/
-
-  aside .content-wrapper {
-    justify-content: space-around;
-    /* margin: 0; */
-  }
-
-  aside .content-wrapper .form-description,
-  aside .content-wrapper .form {
-    width: 30%;
-  }
-
-  /* ===================================== Features =================================== */
-
-  .features h2 {
-    width: 90%;
-  }
-
-  .features-items {
-    display: flex;
-    justify-content: center;
-  }
-
-  .features article {
-    flex-basis: 33%;
-  }
-
-  .features .features-item-description {
-    width: 70%;
-  }
-
-  /* =========================================== Reviews ============================ */
-
-  .reveiws h2 {
-    padding-bottom: 50px;
-  }
-
-  .reviews article .lacrue-feedback {
-    width: 42%;
-  }
-
-  /* ======================================== Footer ====================================*/
+  /* =============================== Desktop Footer =============================*/
 
   footer .content-wrapper {
     width: 100%;
@@ -803,8 +764,58 @@ FAQ Page
     /* margin-top: 70px; */
   }
 
+  /* ============================== Desktop Main Page ===========================*/
 
-  /* ============================ About page ======================*/
+  .hero-area {
+    height: 600px;
+  }
+
+  .hero-area h1 {
+    width: 80%;
+  }
+
+  aside .content-wrapper {
+    justify-content: space-around;
+    /* margin: 0; */
+  }
+
+  aside .content-wrapper .form-description,
+  aside .content-wrapper .form {
+    width: 30%;
+  }
+
+  .features h2 {
+    width: 90%;
+  }
+
+  .features-items {
+    display: flex;
+    justify-content: center;
+  }
+
+  .features article {
+    flex-basis: 33%;
+  }
+
+  .features .features-item-description {
+    width: 70%;
+  }
+
+  .reveiws h2 {
+    padding-bottom: 50px;
+  }
+
+  .reviews article .lacrue-feedback {
+    width: 42%;
+  }
+
+
+
+  /* ============================ Desktop About Page ==========================*/
+
+  .mission h2 {
+    font-size: 3rem;
+  }
 
   .mission h2,
   .contact-section .content-wrapper h2 {
@@ -812,16 +823,18 @@ FAQ Page
   }
 
 
-
-
-  /* ============================ FAQ Page ==========================*/
+  /* ============================ Desktop FAQ Page ============================*/
 
   .faq h2 {
+    font-size: 3em;
     width: 100%;
   }
 
-
-
+  .faq h4,
+  .faq p {
+    font-size: 1.125em;
+    line-height: 1;
+  }
 
 }
 
