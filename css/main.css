@@ -13,7 +13,7 @@
 
 html {
   color: #222;
-  font-size: 1em;
+  font-size: 16px;
   line-height: 1.4;
 }
 
@@ -91,6 +91,7 @@ textarea {
 body {
   font-family: Open Sans, sans-serif;
   color: #e2e3ed;
+  font-size: 1em;
 }
 
 .content-wrapper {
@@ -128,6 +129,8 @@ header .header-logo {
 
 header nav {
   width: 60%;
+  font-size: 18px;
+  font-weight: bold;
   /* outline: 2px dashed greenyellow; */
 }
 
@@ -173,15 +176,19 @@ footer h4 {
   /* padding: 20px 0; */
 }
 
-footer .social-icons {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
+footer address p {
+  font-style: initial;
 }
 
 footer .social p {
   display: flex;
   justify-content: center;
+  align-items: center;
+}
+
+footer .social-icons {
+  display: flex;
+  justify-content: space-around;
   align-items: center;
 }
 
@@ -193,8 +200,15 @@ footer .copyright {
 /*--------------Home Page on Mobile---------------------------*/
 
 h1 {
-  font-size: 2em;
+  font-size: 36px;
+  line-height: 43px;
+  font-weight: 500;
   font-family: Poppins, Helvetica, Arial, sans-serif;
+}
+
+h2 {
+  font-size: 30px;
+  font-weight: 500;
 }
 
 h2,
@@ -203,8 +217,15 @@ h4 {
   font-family: Poppins, sans-serif;
 }
 
+h3,
+h4 {
+  font-size: 18px;
+  font-weight: 500;
+}
+
 p {
-  font-size: .875em;
+  font-size: 14px;
+  line-height: 18px;
 }
 
 .hero-area {
@@ -220,13 +241,48 @@ aside {
 }
 
 aside .content-wrapper {
+  /* outline: 1px solid cyan; */
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
-.form-description,
+aside .content-wrapper .form-description,
+aside .content-wrapper .form {
+  width: 100%;
+  margin: 0;
+  outline: 1px solid darkred;
+}
+
 .form {
-  width: 40%;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+.form h3 {
+  margin: 20px 0;
+}
+
+#email-field {
+  padding: 1em;
+  margin-bottom: 20px;
+  font-style: italic;
+}
+
+#download-button {
+  padding: 20px 0;
+  margin-top: 20px;
+}
+
+aside .form input {
+  width: 100%;
+
+}
+
+input {
+  font-size: 18px;
+  font-weight: 500;
 }
 
 .features {
@@ -266,6 +322,7 @@ aside .content-wrapper {
 
 .reveiws h2 {
   margin-bottom: 40px;
+  line-height: 30px;
 }
 
 .reviews h3 {
@@ -306,6 +363,7 @@ FAQ Page
 
 .faq h2 {
   margin-bottom: 40px;
+  line-height: 30px;
 }
 
 .faq .content-wrapper {
@@ -320,6 +378,9 @@ FAQ Page
   margin-bottom: 50px;
 }
 
+.faq-content h4 {
+  line-height: 24px;
+}
 
 
 
@@ -414,7 +475,7 @@ FAQ Page
    ========================================================================== */
 
 @media only screen and (min-width: 768px) {
-  /* Style adjustments for tablets */
+  /************************ Style adjustments for tablets ***************************/
 
   h1 {
     font-size: 3em;
@@ -432,14 +493,13 @@ FAQ Page
 
   }
 
-
-
   .content-wrapper {
     max-width: 640px;
     margin: 100px 0;
     outline: 1px dashed rgb(92, 47, 255);
   }
 
+  /*  ===========================header area ===================================*/
 
   header {
     padding: 33px 0;
@@ -456,8 +516,6 @@ FAQ Page
     width: 50%;
   }
 
-
-
   header nav {
     width: 25%;
   }
@@ -471,16 +529,19 @@ FAQ Page
     display: none;
   }
 
-  /* Hero Area */
+  /* ============================= Hero Area ===================================*/
 
   .hero-area {
     background-image: ;
   }
 
-  /* Aside */
+  .hero-area h1 {
+    margin: 0;
+  }
+
+  /* ===================================  Aside ===============================*/
 
   aside .content-wrapper {
-    outline: 1px solid cyan;
     margin: 50px 0;
     display: flex;
     justify-content: space-between;
@@ -491,10 +552,9 @@ FAQ Page
   aside .content-wrapper .form {
     width: 40%;
     margin: 0;
-    outline: 1px solid darkred;
   }
 
-  /* Features */
+  /* ===================================== Features =================================== */
 
   .features-items {
     display: flex;
@@ -511,15 +571,13 @@ FAQ Page
     outline: 1px solid white;
   }
 
-
-
   .features .features-item-description {
     width: 50%;
     text-align: center;
     /* align-content: center; */
   }
 
-  /* Reviews */
+  /* =========================================== Reviews ============================ */
 
   .reviews h3 {
     width: 100%;
@@ -534,6 +592,8 @@ FAQ Page
   .reviews article .lacrue-feedback {
     width: 49%;
   }
+
+  /* ======================================== Footer ====================================*/
 
   footer .content-wrapper {
     width: 65%;
@@ -570,16 +630,15 @@ FAQ Page
   }
 
 
-  .hero-area h1 {
-    margin: 0;
 
-  }
 
   /**************** About page for tablet *****************/
 
+  /* ======================== Mission area ======================= */
+
   .mission .content-wrapper {
     display: flex;
-    justify-content: center;
+    justify-content: left;
     flex-wrap: wrap;
   }
 
@@ -598,9 +657,11 @@ FAQ Page
     margin: 0 0 20px 0;
   }
 
-  .contact-section .content-wrapper h2{
+  .contact-section .content-wrapper h2 {
     width: 80%;
   }
+
+  /* =================================== Contact area =======================*/
 
   .contact-content {
     display: flex;
@@ -618,7 +679,6 @@ FAQ Page
 
   .faq .content-wrapper {
     justify-content: space-between;
-
   }
 
   .faq-content {
@@ -633,18 +693,135 @@ FAQ Page
     width: 100%;
   }
 
-
   .faq h4,
   .faq p {
     font-size: .875em;
     line-height: 15.75px;
   }
 
-
 }
 
 @media only screen and (min-width: 1200px) {
-  /* Style adjustments for desktops */
+  /******************** Style adjustments for desktops *******************************/
+
+  h1 {
+    font-size: 60px;
+  }
+
+  h2 {
+    font-size: 36px;
+  }
+
+  h3,
+  h4 {
+    font-size: 30px;
+  }
+
+  p {
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  .content-wrapper {
+    max-width: 960px;
+    /* margin: 0; */
+  }
+
+  /* ================== header area =========================*/
+
+  header {
+    padding: 15px 0;
+  }
+
+  /* ================== hero area ===========================*/
+
+  .hero-area {
+    height: 600px;
+  }
+
+  .hero-area h1 {
+    width: 80%;
+  }
+
+  /* ======================= Aside area ==================================*/
+
+  aside .content-wrapper {
+    justify-content: space-around;
+    /* margin: 0; */
+  }
+
+  aside .content-wrapper .form-description,
+  aside .content-wrapper .form {
+    width: 30%;
+  }
+
+  /* ===================================== Features =================================== */
+
+  .features h2 {
+    width: 90%;
+  }
+
+  .features-items {
+    display: flex;
+    justify-content: center;
+  }
+
+  .features article {
+    flex-basis: 33%;
+  }
+
+  .features .features-item-description {
+    width: 70%;
+  }
+
+  /* =========================================== Reviews ============================ */
+
+  .reveiws h2 {
+    padding-bottom: 50px;
+  }
+
+  .reviews article .lacrue-feedback {
+    width: 42%;
+  }
+
+  /* ======================================== Footer ====================================*/
+
+  footer .content-wrapper {
+    width: 100%;
+    /* padding-top: 70px; */
+  }
+
+  footer .contact {
+    width: 25%;
+  }
+
+  footer .social {
+    width: 25%;
+  }
+
+  footer .copyright {
+    /* margin-top: 70px; */
+  }
+
+
+  /* ============================ About page ======================*/
+
+  .mission h2,
+  .contact-section .content-wrapper h2 {
+    width: 95%;
+  }
+
+
+
+
+  /* ============================ FAQ Page ==========================*/
+
+  .faq h2 {
+    width: 100%;
+  }
+
+
+
 
 }
 
