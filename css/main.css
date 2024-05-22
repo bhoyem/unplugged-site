@@ -272,21 +272,30 @@ aside .content-wrapper .form {
   outline: 1px solid darkred;
 }
 
-.form {
+aside .form {
   display: flex;
   justify-content: flex-start;
   flex-wrap: wrap;
+  margin-top: 30px;
 }
 
 .form h3 {
-  margin: 20px 0;
+  /* margin: 20px 0; */
 }
 
-#email-field {
+input[type=email] {
+  box-sizing: border-box;
+  width: 100%;
+  color: #2a423a;
+  font-style: italic;
+  padding: 1em;
+}
+
+/* #email-field {
   padding: 1em;
   margin-bottom: 20px;
   font-style: italic;
-}
+} */
 
 #download-button {
   padding: 20px 0;
