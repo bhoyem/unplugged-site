@@ -364,6 +364,10 @@ input {
   /* margin: 50px 0; */
 }
 
+.reviews figure {
+  width: 100%;
+}
+
 .reveiws h2 {
   margin-bottom: 40px;
   line-height: 1;
@@ -650,9 +654,10 @@ input {
     /* align-content: center; */
   }
 
-  .reviews article img {
+  .reviews figure {
     width: 49%;
   }
+
 
   .reviews h3 {
     width: 100%;
@@ -828,7 +833,11 @@ input {
     width: 70%;
   }
 
-  .reveiws h2 {
+  .reviews .content-wrapper {
+    margin-top: 50px;
+  }
+
+  .reviews h2 {
     padding-bottom: 50px;
   }
 
