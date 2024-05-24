@@ -713,6 +713,10 @@ input {
     margin: 0 0 20px 0;
   }
 
+  .map figure {
+    padding-bottom: 55%;
+  }
+
   .contact-section h4 {
     font-size: 1.5em;
   }
@@ -872,6 +876,10 @@ input {
   .mission h2,
   .contact-section .content-wrapper h2 {
     width: 95%;
+  }
+
+  .map figure {
+    padding-bottom: 46.875%;
   }
 
 
