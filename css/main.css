@@ -263,6 +263,7 @@ footer .copyright {
   justify-content: center;
   background: url('../img/unplugged-retreat.jpg') center no-repeat #202322;
   background-size: cover;
+  min-height: 500px;
 }
 
 .hero-area h1 {
@@ -649,7 +650,7 @@ input {
   /* ==================================== Tablet Homepage ===================================*/
 
   .hero-area {
-    background-image: ;
+    min-height: 600px;
   }
 
   .hero-area h1 {
